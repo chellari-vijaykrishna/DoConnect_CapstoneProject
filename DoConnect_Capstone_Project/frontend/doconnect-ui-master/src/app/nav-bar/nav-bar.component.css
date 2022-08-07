@@ -1,0 +1,36 @@
+.navbar-brand{
+    font-weight: bold;
+}
+.spacebetween{
+  margin-left: 5px;
+}
+
+mat-sidenav{
+  background-color: #0f172a;
+  width: 230px;
+  height: 100%;
+}
+
+mat-sidenav-content{
+  height: 100vh;
+  width: auto;
+  background-color: white;
+}
+.main{
+  margin-left: auto;
+  margin-top: auto;
+}
+mat-toolbar {
+  color: gray;
+  justify-content: space-between;
+}
+
+mat-icon{
+  margin-left: 15px;
+  color: gray;
+
+}
+.box{
+  margin-top: 15px;
+}
+

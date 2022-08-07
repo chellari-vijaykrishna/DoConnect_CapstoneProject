@@ -1,0 +1,62 @@
+*{
+  font-family: sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.title{
+  margin-left: 28%;
+  padding-top: 13px;
+  font-weight: 25px;
+  font-size: medium;
+  color: white;
+}
+
+.user{
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.src{
+  margin-top: 16px;
+  width: 140px;
+  height: 160px;
+}
+.name{
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 3px;
+}
+
+.email{
+  text-align: center;
+  text-transform: lowercase;
+  color: #8997ac;
+}
+.menu{
+  width: 100%;
+}
+.menu-head{
+  color: rgb(229, 241, 59);
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.menu-button{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  color: white;
+}
+.menu-button span{
+  color: white;
+  font-weight: 600;
+}
+.menu-button:hover{
+  background-color: #2c3344;
+}
+.menu-button:focus{
+  background-color: #2c3344;
+}

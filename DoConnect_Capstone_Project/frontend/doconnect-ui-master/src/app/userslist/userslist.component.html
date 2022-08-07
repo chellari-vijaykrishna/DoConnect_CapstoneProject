@@ -1,0 +1,21 @@
+<div class="heading">
+  Users List Section
+</div>
+
+<div *ngIf="userThere" id="userTable" class="center">
+  <table class="table table-striped table-hover sizedbox" >
+    <tr>
+      <th>Id</th>
+      <th>UserName</th>
+      <th>User Email</th>
+      <th>PhoneNumber</th>
+    </tr>
+
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.phoneNumber }}</td>
+    </tr>
+  </table>
+</div>

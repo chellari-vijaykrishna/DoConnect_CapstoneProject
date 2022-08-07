@@ -1,0 +1,43 @@
+<div class="input-group flex-nowrap w-100 p-1">
+  <input
+    type="search"
+    class="form-control"
+    placeholder="Search"
+    #search
+    (keyup.enter)="getValue(search.value)"
+    aria-label="Search"
+    aria-describedby="addon-wrapping"
+  />
+</div>
+
+
+<div class="container center" *ngIf="isSearched">
+  <table class="table sizedbox">
+    <thead class="thead-dark">
+      <tr class="table table-striped">
+        <th>Question</th>
+        <th>Posted By</th>
+        <th>Topic</th>
+        <th>Get Answer</th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+      <tr *ngFor="let question of questions">
+        <td>{{ question.question }}</td>
+        <td>{{ question.user.name }}</td>
+        <td>{{ question.topic }}</td>
+        <td>
+          <button
+            class="btn btn-outline-success"
+            id="{{ question.id }}"
+            (click)="sendQuestionToGetAnswer(question.id)"
+          >
+            Get Answers
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

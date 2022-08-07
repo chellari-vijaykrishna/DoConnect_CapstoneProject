@@ -1,0 +1,42 @@
+<div class="heading">
+  UnApproved Answers Section
+</div>
+
+<div *ngIf="answerThere" id="questionTable" class="center">
+  <table class="table sizedbox">
+    <tr class="table-success table-striped">
+      <th>Id</th>
+      <th>Question</th>
+      <th>Posted By</th>
+      <th>Action</th>
+      <th>Action</th>
+    </tr>
+
+    <tr
+      class="table-success table-striped"
+      *ngFor="let answer of answers"
+    >
+      <td>{{ answer.id }}</td>
+      <td>{{ answer.answer }}</td>
+      <td>{{answer.answerUser.name }}</td>
+      <td>
+        <button
+          class="btn btn-outline-success"
+          id="{{ answer }}"
+          (click)="approveAnswer(answer.id)"
+        >
+          Approve
+        </button>
+      </td>
+      <td>
+        <button
+          class="btn btn-outline-danger"
+          id="{{ question }}"
+          (click)="deleteAnswer(answer.id)"
+        >
+          Remove
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,19 @@
+.sizedbox{
+  margin-top: 6px;
+  padding-top: 5px;
+}
+
+.center{
+  justify-content: center;
+  padding-top: 10px;
+  padding-left: 30px;
+  border: 1px solid gray;
+}
+
+.heading{
+  text-align: center;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
